@@ -8,9 +8,10 @@ class ConnectionGene():
         the weight of the connection,
         whether or not the connection gene is expressed,
         and an innovation number [...](Ken&Risto)"""
-        self.in_node = NodeGene()
-        self.out_node = NodeGene()
+        self.in_node = None
+        self.out_node = None
         self.connection_weight = 0.0
         self.enable = False
-        self.innovation_id = 1
+        self.innovation_id = None
+
 

@@ -1,4 +1,4 @@
-import abc
+import random
 from node_gene import NodeGene
 from connection_gene import ConnectionGene
 
@@ -10,14 +10,17 @@ class Genome():
         list of connection genes,
         each of which refers to
         two node genes being connected.(Ken&Risto)"""
+
         self.connection_genes = []
 
-        self.mutation_threshold = None
+        self.mutation_threshold = 0.1
+        self.mutation_lower_threshold = 0.0
+        self.mutation_higher_threshold = 1.0
 
-
-    def mutation(self, threshold, mutation_type):
+    def mutation(self, mutation_type):
         if mutation_type not in MUTATION_TYPES:
             raise GenomeError("mutation type not supported")
+        threshold = random.uniform(self.mutation_lower_threshold, self.mutation_higher_threshold)
         if threshold < self.mutation_threshold:
             return
         if mutation_type == "add_node":
@@ -50,6 +53,13 @@ class Genome():
 
     def mutate_remove_connection(self):
         pass
+
+    def get_num_hidden_nodes(self):
+        count = 0
+        for node_gene in self.connection_genes:
+            if node_gene.type == "hidden":
+                count+=1
+        return count
 
 
 class GenomeError():
