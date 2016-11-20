@@ -1,14 +1,16 @@
 import abc
 from node_gene import NodeGene
+from connection_gene import ConnectionGene
 
 MUTATION_TYPES = ["add_node", "remove_node", "add_connection", "remove_connection"]
+
 class Genome():
     def __init__(self):
         """Each genome includes a
         list of connection genes,
         each of which refers to
-         two node genes being connected.(Ken&Risto)"""
-        self.connection_genes = [()]
+        two node genes being connected.(Ken&Risto)"""
+        self.connection_genes = []
 
         self.mutation_threshold = None
 
