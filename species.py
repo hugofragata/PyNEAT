@@ -22,12 +22,20 @@ class Species():
 
     def __init__(self):
         self.species_set = []
-        self.tracker = InnovationTracker
+        self.id = InnovationTracker
         self.representative = Genome
+        self.average_fitness = 0.0
+        self.max_fitness = 0.0
+        self.max_fitness_ever = 0.0
+        
 
 
     def separate_between_species(self, genomes):
-        """"""
+        """
+
+        :param genomes:
+        :return:
+        """
         pass
 
     def compatibility_distance(self, a_genome, b_genome):
@@ -41,4 +49,9 @@ class InnovationTracker():
         id = self.id
         self.id+=1
         return id
+
+class SpeciesError:
+    def __init__(self, a):
+        print("SPECIES ERROR: " + str(a))
+        pass
 

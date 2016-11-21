@@ -14,4 +14,7 @@ class ConnectionGene():
         self.enable = False
         self.innovation_id = None
 
-
+class ConnectionGeneError:
+    def __init__(self, a):
+        print("CONNECTION_GENE ERROR: " + str(a))
+        pass

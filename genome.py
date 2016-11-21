@@ -5,17 +5,31 @@ from connection_gene import ConnectionGene
 MUTATION_TYPES = ["add_node", "remove_node", "add_connection", "remove_connection"]
 
 class Genome():
-    def __init__(self):
+    def __init__(self, parentA, parentB, species_tracker_id):
         """Each genome includes a
         list of connection genes,
         each of which refers to
         two node genes being connected.(Ken&Risto)"""
 
         self.connection_genes = []
+        self.node_genes = []
 
+        self.species = species_tracker_id
+        self.parents = (parentA, parentB)
+
+        self.last_gene_id = 1
+
+        #TODO: remove hardcoded-ness
         self.mutation_threshold = 0.1
         self.mutation_lower_threshold = 0.0
         self.mutation_higher_threshold = 1.0
+
+        self.num_inputs = 4
+        self.num_outputs = 1
+
+        self.fitness = None
+        self.cross_validation_fitness = None
+
 
     def mutation(self, mutation_type):
         if mutation_type not in MUTATION_TYPES:
@@ -60,6 +74,11 @@ class Genome():
             if node_gene.type == "hidden":
                 count+=1
         return count
+
+    def get_new_gene_id(self):
+        g_id = self.last_gene_id
+        self.last_gene_id+=1
+        return  g_id
 
 
 class GenomeError():
