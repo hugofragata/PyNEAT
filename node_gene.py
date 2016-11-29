@@ -14,8 +14,6 @@ class NodeGene():
         self.bias = 0.001
         self.response = 0.5
 
-
-
     def something(self, arg):
         pass
 

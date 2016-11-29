@@ -18,37 +18,17 @@ class Species():
     placed in the first species in which g is compatible with the representative genome of
     that species. This way, species do not overlap.1
     If g is not compatible with any existing
-    species, a new species is created with g as its representative."""
+    species, a new species is created with g as its representative.(stanley)"""
 
-    def __init__(self):
-        self.species_set = []
-        self.id = InnovationTracker
-        self.representative = Genome
+    def __init__(self, species_id, representative):
+        self.id = species_id
+        if not type(representative) == Genome:
+            raise SpeciesError("Representative provided is not a Genome but it should be.")
+        self.representative = representative
         self.average_fitness = 0.0
         self.max_fitness = 0.0
         self.max_fitness_ever = 0.0
-        
-
-
-    def separate_between_species(self, genomes):
-        """
-
-        :param genomes:
-        :return:
-        """
-        pass
-
-    def compatibility_distance(self, a_genome, b_genome):
-        pass
-
-class InnovationTracker():
-    def __init__(self):
-        self.id = 1
-
-    def next_id(self):
-        id = self.id
-        self.id+=1
-        return id
+        self.members = [representative]
 
 class SpeciesError:
     def __init__(self, a):

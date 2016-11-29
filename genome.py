@@ -5,7 +5,7 @@ from connection_gene import ConnectionGene
 MUTATION_TYPES = ["add_node", "remove_node", "add_connection", "remove_connection"]
 
 class Genome():
-    def __init__(self, parentA, parentB, species_tracker_id):
+    def __init__(self, species_tracker_id, parentA, parentB):
         """Each genome includes a
         list of connection genes,
         each of which refers to
