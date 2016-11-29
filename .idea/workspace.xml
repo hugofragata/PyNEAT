@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92b6d9a3-e0a2-4b83-8271-9c50c9b71beb" name="Default" comment="slowly adding features pt.2&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/innovation_tracker.py" />
+    <list default="true" id="92b6d9a3-e0a2-4b83-8271-9c50c9b71beb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/genome.py" afterPath="$PROJECT_DIR$/genome.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural_network.py" afterPath="$PROJECT_DIR$/neural_network.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_gene.py" afterPath="$PROJECT_DIR$/node_gene.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/species.py" afterPath="$PROJECT_DIR$/species.py" />
     </list>
     <ignored path="PyNEAT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -137,10 +132,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
-    <option name="y" value="-280" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="776" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -435,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479730028088</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="slowly adding features pt.3&#10;">
+      <created>1480457217860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1480457217860</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -448,10 +450,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-280" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -488,7 +490,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="slowly adding features" />
     <MESSAGE value="slowly adding features pt.2&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="slowly adding features pt.2&#10;" />
+    <MESSAGE value="slowly adding features pt.3&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="slowly adding features pt.3&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
