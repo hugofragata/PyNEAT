@@ -1,5 +1,5 @@
 
-NODE_GENE_TYPES = ["input", "output", "hidden", "bias"]
+NODE_GENE_TYPES = ["input", "output", "hidden"]
 
 class NodeGene():
 
