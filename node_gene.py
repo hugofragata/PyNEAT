@@ -1,4 +1,4 @@
-
+import math, random
 NODE_GENE_TYPES = ["input", "output", "hidden"]
 
 class NodeGene():
@@ -13,9 +13,27 @@ class NodeGene():
         #TODO: make this not hardcoded
         self.bias = 0.001
         self.response = 1
+        triggers = Triggers()
+        self.trigger = triggers.get_random_trigger()
 
     def something(self, arg):
         pass
+
+class Triggers():
+    def __init__(self):
+        self.triggers = [self.cube_trigger, self.square_trigger, self.sin_trigger]
+
+    def cube_trigger(self, a):
+        return a**3
+
+    def square_trigger(self, a):
+        return a**2
+
+    def sin_trigger(self, a):
+        return math.sin(a)
+
+    def get_random_trigger(self):
+        return random.choice(self.triggers)
 
 class NodeGeneError:
     def __init__(self, a):

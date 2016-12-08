@@ -1,5 +1,4 @@
 from genome import Genome
-import math
 ###
 #THIS IS A FEED FORWARD NEURAL NET
 ###
@@ -71,7 +70,7 @@ def create_phenotype(genome):
 
             used_nodes.add(node_id)
             node_gene = genome.node_genes[node_id]
-            node_evals.append(NodeEval(node_id, math.sin, node_gene.bias, node_gene.response, inputs))
+            node_evals.append(NodeEval(node_id, node_gene.trigger, node_gene.bias, node_gene.response, inputs))
 
     return NeuralNetwork(len(used_nodes), input_nodes, output_nodes, node_evals)
 
