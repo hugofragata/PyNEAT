@@ -1,5 +1,3 @@
-from node_gene import NodeGene
-
 class ConnectionGene():
     def __init__(self):
         """Each connection gene
