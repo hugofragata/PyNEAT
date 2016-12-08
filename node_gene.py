@@ -3,18 +3,19 @@ NODE_GENE_TYPES = ["input", "output", "hidden"]
 
 class NodeGene():
 
-    def __init__(self, gene_id):
+    def __init__(self, gene_id, type="hidden", bias=0.001, response=1, trigger=None):
         """Node genes provide a
         list of inputs, hidden nodes,
         and outputs that can be connected.(Ken&Risto)"""
-        self.type = None
+        self.type = type
         self.gene_id = gene_id
-
-        #TODO: make this not hardcoded
-        self.bias = 0.001
-        self.response = 1
-        triggers = Triggers()
-        self.trigger = triggers.get_random_trigger()
+        self.bias = bias
+        self.response = response
+        if not trigger:
+            triggers = Triggers()
+            self.trigger = triggers.get_random_trigger()
+        else:
+            self.trigger = trigger
 
     def something(self, arg):
         pass

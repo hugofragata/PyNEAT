@@ -37,8 +37,8 @@ def create_phenotype(genome):
     if not type(genome) == Genome:
         raise NeuralNetworkError("To create a phenotype you need to pass an instance of Genome")
 
-    input_nodes = [node_gene.ID for node_gene in genome.node_genes.values() if node_gene.type == 'input']
-    output_nodes = [node_gene.ID for node_gene in genome.node_genes.values() if node_gene.type == 'output']
+    input_nodes = [node_gene.gene_id for node_gene in genome.node_genes.values() if node_gene.type == 'input']
+    output_nodes = [node_gene.gene_id for node_gene in genome.node_genes.values() if node_gene.type == 'output']
     connections = [(conn_gene.in_node_id, conn_gene.out_node_id) for conn_gene in genome.conn_genes.values() if conn_gene.enabled]
 
     layers = []
