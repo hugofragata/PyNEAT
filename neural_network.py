@@ -8,11 +8,31 @@ class NeuralNetwork():
         self.node_evals = node_evals
         self.input_nodes = inputs
         self.output_nodes = outputs
-        self.values = [0.0] * (1 + max_node)
         self.num_nodes = 1 + max_node
 
     def activate(self, inputs):
-        pass
+        '''
+        Receives an input vector and calculates the neural net's output vector
+        :param inputs: vector of # equal to input_nodes
+        :return: vector with output result
+        '''
+        if not len(inputs)==len(self.input_nodes):
+            raise NeuralNetworkError("To activate NeuralNet the number of input values "+
+                                     "must be the same as the number of input nodes")
+
+        values = [0.0] * self.num_nodes
+        for node_id, input_value in zip(self.input_nodes, inputs):
+            values[node_id] = input_value
+
+        for node_eval in self.node_evals:
+            result = 0.0
+            for node_id, weight in node_eval.links:
+                result += values[node_id] * weight
+            result = node_eval.trigger(node_eval.bias + node_eval.response * result)
+            values[node_eval.node_id] = result
+
+        output_values = [values[node_id] for node_id in self.output_nodes]
+        return output_values
 
 def create_phenotype(genome):
     if not type(genome) == Genome:
@@ -53,15 +73,15 @@ def create_phenotype(genome):
             node_gene = genome.node_genes[node_id]
             node_evals.append(NodeEval(node_id, math.sin, node_gene.bias, node_gene.response, inputs))
 
-    return NeuralNetwork(max(used_nodes), input_nodes, output_nodes, node_evals)
+    return NeuralNetwork(len(used_nodes), input_nodes, output_nodes, node_evals)
 
 class NodeEval():
-    def __init__(self, node_id, trigger, bias, response, in_node_ids):
+    def __init__(self, node_id, trigger, bias, response, links):
         self.node_id = node_id
         self.trigger = trigger
         self.bias = bias
         self.response = response
-        self.in_node_ids = in_node_ids
+        self.links = links
 
 class NeuralNetworkError():
     def __init__(self, a):

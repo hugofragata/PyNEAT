@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="92b6d9a3-e0a2-4b83-8271-9c50c9b71beb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connection_gene.py" afterPath="$PROJECT_DIR$/connection_gene.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural_network.py" afterPath="$PROJECT_DIR$/neural_network.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_gene.py" afterPath="$PROJECT_DIR$/node_gene.py" />
     </list>
     <ignored path="PyNEAT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="neural_network.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neural_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="502">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -40,8 +40,8 @@
       <file leaf-file-name="node_gene.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_gene.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/genome.py" />
         <option value="$PROJECT_DIR$/species.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/node_gene.py" />
         <option value="$PROJECT_DIR$/connection_gene.py" />
+        <option value="$PROJECT_DIR$/node_gene.py" />
         <option value="$PROJECT_DIR$/neural_network.py" />
       </list>
     </option>
@@ -423,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480467695659</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="creating an instance of a nn through a &quot;genome&quot;">
+      <created>1481221484883</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1481221484883</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -478,7 +485,8 @@
     <MESSAGE value="slowly adding features pt.2&#10;" />
     <MESSAGE value="slowly adding features pt.3&#10;" />
     <MESSAGE value="slowly adding features pt.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="slowly adding features pt.4" />
+    <MESSAGE value="creating an instance of a nn through a &quot;genome&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating an instance of a nn through a &quot;genome&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -888,16 +896,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_gene.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="238">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/neural_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="502">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

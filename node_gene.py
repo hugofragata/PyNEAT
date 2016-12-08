@@ -12,7 +12,7 @@ class NodeGene():
 
         #TODO: make this not hardcoded
         self.bias = 0.001
-        self.response = 0.5
+        self.response = 1
 
     def something(self, arg):
         pass
