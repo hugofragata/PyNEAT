@@ -86,3 +86,4 @@ class NeuralNetworkError():
     def __init__(self, a):
         print("NEURAL_NETWORK ERROR: "+str(a))
         pass
+
