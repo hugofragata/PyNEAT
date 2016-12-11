@@ -40,6 +40,25 @@ class NodeGene():
         while self.trigger == current_trigger:
             self.trigger = trigs.get_random_trigger()
 
+def reproduce(node_gene_A, node_gene_B):
+    '''
+    Use this method to get children between two node genes.
+    :param node_gene_A: A node gene
+    :param node_gene_B: Another node gene
+    :return: A child of them
+    '''
+    #Children get the node_id of their parents, which should be the same
+    id = node_gene_A.node_id
+    #The type should be the same for parents, which will be the children's type
+    type = node_gene_A.type
+    #The other node_gene attributes could be different for A and B
+    #therefore, to produce children we must randomly choose between A and B for each attribute
+    bias = random.choice([node_gene_A.bias, node_gene_B.bias])
+    response = random.choice([node_gene_A.response, node_gene_B.response])
+    trigger = random.choice([node_gene_A.trigger, node_gene_B.trigger])
+    #init the child and return it
+    child = NodeGene(id, type, bias, response, trigger)
+    return child
 
 class Triggers():
     def __init__(self):
