@@ -4,5 +4,5 @@ Implementing "Evolving Neural Networks through Augmenting Topologies" by Kenneth
 
 Basing this off @CodeReclaimers implementation of neat-society and Ugo Vierucci's implementation of JNEAT.
 
-The propose is to learn as I go and to provide an easier version to play with and to get in code than other available implementations. 
+The purpose is to learn as I go and to provide an easier version to play with and to understand the code than other available implementations. 
 The goal is not quantity of features or performance, but rather a learning tool for me and others.
