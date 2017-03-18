@@ -1,5 +1,7 @@
 # PyNEAT
 
+[![Build Status](https://travis-ci.org/hugofragata/PyNEAT.svg?branch=master)](https://travis-ci.org/hugofragata/PyNEAT)
+
 Implementing "Evolving Neural Networks through Augmenting Topologies" by Kenneth O. Stanley and Risto Miikkulainen(2002) in Python3.5.
 
 Basing this off @CodeReclaimers implementation of neat-society and Ugo Vierucci's implementation of JNEAT.
